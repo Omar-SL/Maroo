@@ -1,0 +1,512 @@
+/*Global Rules */
+ * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+ }
+ body{
+    font-family: 'Bree Serif', serif;
+    height: 3000px;
+
+ }
+/*End Global Rules*/
+/* Strat Header */
+@media (max-width: 767.98px){
+    .navbar{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .navbar{
+    width: 100%;
+    }
+}
+.navbar{
+    position: fixed;
+    border-bottom: 2px solid #ccc;
+    min-height: 50px;
+    overflow: hidden;
+   background-color:azure;
+   
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.navbar ul li a { 
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: rgb(119, 106, 106);
+    font-weight: bold;
+}
+.navbar ul li a:hover{
+    color: darkcyan;
+}
+
+  .header{
+      background: url('../img/1.jpg') no-repeat top center ;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      min-height: 500px;
+      position: relative;
+
+
+  }
+  .header .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background-color: rgb(0, 189, 170,.5);
+  }
+  .header .overlay h1{
+      font-size: 60px;
+      margin-top: 100px;
+  }
+  .header .overlay .Plan{
+      border: 4px solid #fff;
+      font-size: 24px;
+      width: 48%;
+      padding: 20px;
+      margin-left: 1%;
+      margin-right: 1%;
+  }
+  .header .overlay p{
+      margin: 0;
+  }
+  .header .overlay .order{
+    border: 4px solid #fff;
+    font-size: 24px;
+    padding: 20px;
+    margin: 30px 1% 0 ;
+}
+  @media (max-width: 420px) { /*custom Media Not found in freamework*/
+      h1{
+          margin-top: 20px !important;
+          font-size: 50px !important;
+      }
+    .header .overlay .Plan{
+        float: none;
+        margin:0 auto 20px ;
+        font-size: 22px;
+    }
+}  
+  @media (max-width: 767.98px) {
+    .header .overlay .Plan{
+        float: none;
+        margin:0 auto 20px ;
+        font-size: 22px;
+    }
+}  
+
+ /* End Header */
+ /* Start features */
+    .features{
+        padding: 30px 0;
+    }
+   .features .h1{
+       font-size: 50px;
+       color: lightseagreen;
+       }
+   .features .feat{
+       color: lightseagreen;
+       padding: 0 20px 0 0;
+       margin-bottom: 20px;
+
+   }
+   .features .feat h2{
+    margin: 10px 0 8px;
+}
+   .features .feat p{
+       line-height: 1.6;
+       margin: 0;
+   }
+   
+    @media (max-width: 767.98px) {/*Mobile &Tablet */
+     .features .feat{
+         text-align: center;
+     }
+     .features .feat:nth-of-type(even){
+         background-color:thistle;
+     }
+}  
+   @media (min-width: 768px){ /*Smal  screen */
+    .features .feat{
+        width: 45%;
+        margin-left: 25px;
+    }
+    
+  }
+  @media (min-width: 992px)and(max-width:1199){ /*Smal  screen */
+    .features .feat{
+        width: 45%;
+        margin-right: 2%;
+    }
+    }
+    @media (min-width: 1200px) {
+        .features .feat{
+            width: 31%;
+        }
+    }
+    
+    
+  
+ /* End features */
+ /* Strat About */
+  .about{
+       background-color: azure;
+       padding: 30px 0;
+       margin: 10px 0;
+  }
+  .about .h1{
+      font-size: 50px;
+      color: darkcyan;
+  }
+  .about .resp-p{
+      color:rgb(43, 189, 226);
+  }
+ /* End About */
+ /* Strat Works */
+ @media (max-width: 767.98px) {/*Mobile &Tablet */
+    .works .image{
+        width: 100%;
+        
+    }
+    img{
+        width: 100%;
+    }
+          
+}  
+ @media (min-width: 768px){ /*Smal  screen */
+    .works .image{
+        width: 50%;
+    }
+    img{
+        width: 100%;
+    }
+   
+  }
+ @media (min-width: 992px){ /*Smal  screen */
+    .works .image{
+        width: 33.33%;
+    }
+    img{
+        width: 100%;
+    }
+    
+    }
+  
+ @media (min-width: 1200px) { /*Large Screen*/
+        .works .image{
+            width: 25%;
+    
+        }
+        img{
+            width: 100%;
+        }
+        
+    }
+ 
+ 
+ /* End Works */
+ /*Strat Our Pricing Table*/
+ .pricingTable{
+     background-color: rgb(103, 200, 230);
+     color:seashell;
+     padding: 50px 0;
+ }
+ .pricingTable .h1{
+     margin: 0 0 40px;
+ }
+ .pricingTable .pricingPlan{
+     border: 3px solid white;
+     padding: 20px 0;
+     position: relative;
+ }
+ .pricingPlan h3{
+     margin: 0 0 10px;
+     font-size: 30px;
+ }
+ .pricingPlan  .pricing{
+     display: inline-block;
+     margin: 0 0 10px;
+     font-size: 22px;
+ }
+ @media (max-width: 767px){
+    .pricingTable .pricingPlan{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+ }
+ @media (min-width: 768px){
+    .pricingTable .pricingPlan{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+ }
+ @media (min-width: 992px){
+    .pricingTable .pricingPlan:not(.ultimate){
+        margin-right: 1%;
+    }
+    #ok{
+        left: 33%;
+    }
+    #lol{
+        right: 33%;
+    }
+    .pricingTable .pricingPlan{
+        width: 32%;
+        margin-bottom: 0;
+    }
+    
+     
+
+ }
+ /*End Our Pricing Table*/
+ /*Start what They Say */
+ .they-say{
+     padding: 50px;
+ }
+ .they-say .h1 {
+     font-size: 50px;
+     margin: 0 0 20px;
+     color: rgb(180, 175, 175);
+ }
+ .they-say .Person-Say{
+     height: 150px;
+ }
+ .they-say .Person-Say{
+     background-color: #EEE;
+     border: 1px solid #DDD;
+     margin: 0 0 20px;
+     padding: 20px;
+     border-radius: 10px;
+ }
+ .they-say .Person-Say img{
+     width: 80px;
+     margin: 0;
+ }
+ .they-say .Person-Say p{
+     margin-left: 10px;
+ }
+ 
+ .they-say .Person-Say p:not(:first-of-type){
+    margin-top: 0 !important;
+}
+ .they-say .Person-Say h3{
+    padding: 10px;;
+    margin-bottom: 0;
+ }
+ 
+ @media (min-width: 992px){
+    .they-say .Person-Say:first-of-type{
+        width:80% !important;
+        margin-left: 10%;
+    
+    }
+    .they-say .Person-Say:not(:first-of-type){
+        width: 49% !important;
+ }
+   
+ }
+ @media (min-width: 768px) {
+    .they-say .Person-Say:first-of-type{
+        width:100%;
+    }
+    .they-say .Person-Say:last-of-type{
+        margin-left: 2%;
+    }
+    
+    .they-say .Person-Say:not(:first-of-type){
+        width: 49%;
+ }
+ 
+}
+@media (max-width: 767.99px) {
+    .they-say .Person-Say{
+        width: 100%;
+        height: 220px;
+    }
+
+}
+.they-say .Person-Say h3{
+    margin:  0 0 10px;
+}
+.they-say .Person-Say p{
+    margin: 0;
+    line-height: 1.4;
+}
+ /*End what They Say */
+ /* Strat Information */
+ @media (max-width: 767.98px) {/*Mobile &Tablet */
+    .information .info li{
+        display: block !important;
+    }
+    .information .h1{
+        font-size: 40px !important;
+    }
+}
+ .information{
+     background-color: azure;
+     padding: 30px;
+     font-size: 18px;
+ }
+ .information .h1{
+     font-size: 50px;
+     color: darkcyan;
+ }
+ .information .info li{
+     background-color: #DDD;
+     padding: 15px;
+     display: inline-block;
+     font-size: 22px;
+     cursor: pointer;
+     border-radius: 20px;
+     color: rgb(92, 78, 78);
+ }
+ .information .content > div{
+     padding: 20px;
+     background-color: #fff;
+     line-height: 2;
+    color:rgb(92, 78, 78) ; 
+ }
+ .information .content{
+     margin-bottom: 20px;
+ }
+ .information .info .selected
+ {
+     background-color: #fff;
+     color: cadetblue;
+     font-weight: bold;
+ }
+ .information .content > div:not(:first-of-type){
+     display: none;
+ }
+ /* End Information */
+ /* Strat Footer */
+ @media (max-width: 767.99px) {
+    footer .copyright,
+    footer .design{
+        width: 100%;
+    }
+ }
+ @media (min-width: 768px) {
+    footer .copyright,
+    footer .design{
+        width: 50%;
+    }
+ }
+ footer{
+     background-color: rgb(97, 171, 173);
+     color: seashell;
+     text-align: center;
+
+ }
+ footer .copyright,
+ footer .design {
+     padding: 30px;
+     font-size: 20px;
+ }
+ /* End Footer */
+
+@media (max-width: 767.98px) {/*Mobile &Tablet */
+     
+    .visibile-xs{
+                 display:block !important;
+    }
+    .hidden-xs{/* عشان العنصر هنا بس */
+        display: none !important;
+    }
+    .resp-p{
+        text-align: center;
+        font-size: 25px !important;
+    }
+}  
+@media (min-width: 768px)and(max-width:991px)  { /*Smal  screen */
+    .container{
+        width: 750px;
+    }
+    .visibile-sm{
+        display: block !important;
+    }
+    .hidden-sm{
+        display: none !important;
+    }
+  }
+  @media (min-width: 992px)and (max-width:1199px)  { /*Medium Screen*/
+    .container{
+        width: 970px;
+    }
+    .visibile-md{
+        display: block !important;
+    }
+    .hidden-md{
+        display: none !important;
+    }
+}
+  @media (min-width: 1200px) { /*Large Screen*/
+    .container{
+        width: 1170px;
+        
+    }
+    .visibile-lg{
+        display: block !important;
+    }
+    .hidden-lg{
+        display: none !important;
+    }
+   }
+ /* Start FreameWork*/
+ .clearfix{
+     clear: both;
+ }
+  .text-center{
+      text-align: center;
+  }
+  .container{
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .visibile-xs,
+  .visibile-sm,
+  .visibile-md,
+  .visibile-lg
+  {
+      display: none;
+  }
+  .float-lf{
+      float: left;
+  }
+  .h1{
+      font-size: 2em;
+  }
+  .resp-p{
+         line-height: 1.8;
+         font-size: 22px;
+  }
+  .rep-img{
+      width: 100%;
+    
+  }
+  .classic-list{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+  }
+  .img-cricle{
+    border-radius: 50px;
+  }
+  .img-thmb{
+      padding: 3px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+  }
+  /* End FreameWork*/
